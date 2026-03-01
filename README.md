@@ -1,2 +1,2 @@
 ## 🌐 Project URL
-https://carolineaurellia.github.io/web-konversi/
+https://carolineaurellia.github.io/Web_Konversi/
