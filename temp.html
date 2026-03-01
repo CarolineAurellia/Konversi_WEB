@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Konversi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Web Konversi</h2>
+
+    <div class="nav">
+        <button onclick="showTab(event,'panjang')" class="active">Panjang</button>
+        <button onclick="showTab(event,'berat')">Berat</button>
+        <button onclick="showTab(event,'temperatur')">Temperatur</button>
+    </div>
+
+    <!-- PANJANG -->
+    <div id="panjang" class="tab">
+        <input type="number" id="panjangValue" placeholder="Masukkan angka">
+        <select id="panjangFrom">
+            <option value="km">Kilometer</option>
+            <option value="m">Meter</option>
+            <option value="cm">Centimeter</option>
+            <option value="mm">Milimeter</option>
+        </select>
+        <select id="panjangTo">
+            <option value="km">Kilometer</option>
+            <option value="m">Meter</option>
+            <option value="cm">Centimeter</option>
+            <option value="mm">Milimeter</option>
+        </select>
+        <button class="convert" onclick="convertPanjang()">Konversi</button>
+        <div class="result" id="panjangResult"></div>
+        <div class="result-box">
+         <p id="panjangResult">Hasil akan muncul di sini</p>
+    </div>
+    </div>
+
+    <!-- BERAT -->
+    <div id="berat" class="tab hidden">
+        <input type="number" id="beratValue" placeholder="Masukkan angka">
+        <select id="beratFrom">
+            <option value="ton">Ton</option>
+            <option value="kg">Kilogram</option>
+            <option value="g">Gram</option>
+        </select>
+        <select id="beratTo">
+            <option value="ton">Ton</option>
+            <option value="kg">Kilogram</option>
+            <option value="g">Gram</option>
+        </select>
+        <button class="convert" onclick="convertBerat()">Konversi</button>
+        <div class="result" id="beratResult"></div>
+        <div class="result-box">
+    <p id="panjangResult">Hasil akan muncul di sini</p>
+</div>
+    </div>
+
+    <!-- TEMPERATUR -->
+    <div id="temperatur" class="tab hidden">
+        <input type="number" id="tempValue" placeholder="Masukkan angka">
+        <select id="tempFrom">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Reamur</option>
+        </select>
+        <select id="tempTo">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Reamur</option>
+        </select>
+        <button class="convert" onclick="convertTemp()">Konversi</button>
+        <div class="result" id="tempResult"></div>
+        <div class="result-box">
+    <p id="panjangResult">Hasil akan muncul di sini</p>
+</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
